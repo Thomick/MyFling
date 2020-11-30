@@ -1,8 +1,9 @@
-Ce que j'ai fait :  -Implémenter la partie obligatoire
-                    -Ajout d'un critère "boule isolée" qui stoppe le parcours si une boule devient inaccessible quel que soit le mouvement
-                    -Amélioration de l'affichage des boules (petit effet de lumière)(modification de la fonction draw_ball)
-                    -Génération aléatoire : Génération aléatoire puis recherche d'une solution (peut parfois être très long pour 15 boules)
-                    -Sauvegarde et chargement de configuration depuis un fichier
+Ce que j'ai fait :
+- Implémenter la partie obligatoire
+- Ajout d'un critère "boule isolée" qui stoppe le parcours si une boule devient inaccessible quel que soit le mouvement
+- Amélioration de l'affichage des boules (petit effet de lumière)(modification de la fonction draw_ball)
+- Génération aléatoire : Génération aléatoire puis recherche d'une solution (peut parfois être très long pour 15 boules)
+- Sauvegarde et chargement de configuration depuis un fichier
 
 Choix d'implémentation :
 1) TYPES:
@@ -29,6 +30,7 @@ Choix d'implémentation :
 Ce que je n'ai pas eu le temps d'implémenter:
 Le critère d'arrêt de la "boule isolée" peut se généraliser en "zones isolées". Si l'on trouve un découpage en quadrants tel que deux quadrants opposés sont vides et les deux autres contiennent tous deux des boules alors les boules contenues dans deux quadrants différents ne pourront jamais interagir entre elles donc il restera au moins deux boules à la fin.
 
+```text
 Boule isolée
 o  o|           o|    
 o o |           -|----
@@ -41,3 +43,4 @@ o o |           o|
 ----|----       -|----
     | o o        |o  o
     |  o         | o   
+```
